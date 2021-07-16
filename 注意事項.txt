@@ -1,0 +1,4 @@
+1.資料不能再用一層資料夾包，會讀不到
+2.html檔名須為index.html
+3.推上去的分支需取名為 gh-pages
+4.網址為：https://alex830216.github.io/
