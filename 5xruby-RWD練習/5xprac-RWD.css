@@ -1,0 +1,370 @@
+* {
+    letter-spacing: .5px;
+}
+
+/* header-start ================================= */
+.head {
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 1;
+}
+.head .parallel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 5px;
+}
+.head .picture a {
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.head .picture img {
+    width: 55px;
+}
+.head .picture a span:nth-child(2),
+.head .picture a span:nth-child(3) {
+    transition: .3s;
+}
+.head .picture a:hover span:nth-child(2),
+.head .picture a:hover span:nth-child(3) {
+    color: #f00;
+}
+.head .text a {
+    font-size: 12px;
+    transition: .3s;
+    position: relative;
+}
+.head .text a:hover {
+    color: #f00;
+}
+.head .text a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 0;
+    border-bottom: 2px solid #f00;
+    left: 50%;
+    right: 50%;
+    transition: .3s;
+}
+.head .text a:hover::after {
+    left: 0;
+    right: 0;
+}
+.head .nav-bar {
+    text-align: center;
+}
+.head .picture a span:nth-child(3) {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .head {
+        padding: 25px 0;
+    }
+    .head a {
+        margin: 0 20px;
+    }
+    .head .text a {
+        font-size: 18px;
+    }
+    
+}
+@media screen and (min-width: 1280px) {
+    .head .picture a span:nth-child(3) {
+        display: inline;
+    }
+}
+/* header-end ================================= */
+
+
+
+/* banner-start ================================= */
+.banner {
+    width: 100%;
+    height: 600px;
+    background-color: hsla(240deg, 80%, 10%, 0.5);
+    background-blend-mode: multiply;
+    background-image: url(banner-home-aca80ad097b4d77ffa3b82879b5d14a8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(0 0, 0 78%, 34% 100%, 100% 78%, 100% 0);
+}
+.banner .text {
+    width: 100%;
+    padding-top: 140px;
+    color: #fff;
+    margin: 0 20px 0 20px;
+}
+.banner .text h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+.banner .text p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.banner .text a {
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    background-color: hsl(349, 100%, 54%);
+    border-radius: 5px;
+    transition: .3s;
+}
+.banner .text a:hover {
+    background-color: hsl(349, 100%, 35%);
+}
+@media screen and (min-width: 768px) {
+    .banner .text {
+        margin-left: 10%;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .banner .text {
+        margin-left: 20%;
+    }
+}
+/* banner-end ================================= */
+
+
+
+/* provide-start ================================= */
+.provide {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+.provide .item-title {
+    padding: 0 20px;
+}
+.provide .item-title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto 50px;
+    position: relative;
+    width: 240px;
+}
+.provide .item-title h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #FF133E;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+}
+.provide .item-title p {
+    font-size: 21px;
+}
+.provide .item-content {
+    width: 270px;
+    margin: auto;
+}
+.provide .item-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.provide .item-content p {
+    
+}
+.provide .item-content img {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .provide .item-title h2 {
+        width: 100%;
+        font-size: 32px;
+    }
+    .provide .item-title p {
+        font-size: 21px;
+    }
+    .row {
+        justify-content: center;
+    }
+}
+/* provide-end ================================= */
+
+
+
+/* teachers-start ================================= */
+.teacher {
+    width: 100%;
+    background-color: #F9FAFB;
+    padding: 150px 0;
+    clip-path: polygon(0 2%, 34% 0, 100% 2%, 100% 100%, 0 100%);
+}
+.teacher .item-title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+.teacher .item-title h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #FF133E;
+    position: absolute;
+    left: 0;
+    margin: 10px auto;
+}
+.teacher .item-title p {
+    font-size: 20px;
+    margin: 30px 0;
+}
+.teacher .col {
+    display: flex;
+}
+.teacher .item-content {
+    background-color: #fff;
+    padding: 30px 20px;
+}
+.teacher .info {
+    text-align: center;
+}
+.teacher .pic img {
+    width: 160px;
+    border-radius: 100px;
+}
+.teacher .text {
+    position: relative;
+}
+.teacher .text span {
+    display: block;
+}
+.teacher .text span:nth-child(1) {
+    position: relative;
+}
+.teacher .text span:nth-child(1)::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #FF133E;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+}
+.teacher .text span:nth-child(2n) {
+    margin: 50px 0 30px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.teacher .social-list {
+    display: flex;
+    justify-content: center;
+}
+.teacher .social-list li {
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+}
+.teacher .social-list li a {
+    color: hsl(219, 10%, 66%);
+    transition: .3s;
+}
+.teacher .social-list li a:hover {
+    color: hsl(219, 10%, 40%);
+}
+.teacher .social-list li a::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: hsl(210, 10%, 95%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+}
+.teacher .main-text {
+    margin: 30px 0;
+}
+.teacher .main-text p {
+    margin-bottom: 15px;
+    line-height: 1.3em;
+}
+.teacher .extra h4 {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.teacher .extra h4::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    flex-grow: 1;
+    background-color: hsl(210, 10%, 95%);
+    margin: 0 20px;
+}
+.teacher .extra ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.teacher .extra li {
+    margin: 10px 10px 25px 10px;
+}
+.teacher .extra li a {
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    color: #f00;
+    transition: .3s;
+}
+.teacher .extra li a:hover {
+    background-color: #f00;
+    color: #fff;
+}
+@media screen and (min-width: 1024px) {
+    .teacher {
+        clip-path: polygon(0 6%, 34% 0, 100% 6%, 100% 100%, 0 100%);
+    }
+}
+/* teachers-end ================================= */
+
+
+
+
+
+
+
+
+/* header-start ================================= */
+
+/* header-end ================================= */
+
+
+
+/* class-start ================================= */
+/* 讓區塊向上移動可參考Day5 relative5xprac */
+
+/* class-end ================================= */
+
+
+
+/* header-start ================================= */
+
+/* header-end ================================= */
+
+
+
+/* header-start ================================= */
+
+/* header-end ================================= */
