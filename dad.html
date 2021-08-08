@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>父親節快樂</title>
+  <style>
+    .wrap {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .wrap .btn {
+      font-size: 50px;
+      border-radius: 30px;
+      padding: 10px;
+    }
+    .wrap p {
+      width: 100%;
+    }
+    .wrap .result {
+      font-size: 50px;
+      color: hsla(231, 71%, 51%, 0.959);
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      animation: alex 2s infinite alternate;
+    }
+    @keyframes alex {
+      0%{ left: -100px;}
+      100%{ left: 100px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <button class="btn">點擊</button>
+    <p class="result"></p>
+  </div>
+</body>
+<script>
+  const btn = document.querySelector(".btn")
+  const result = document.querySelector(".result")
+  btn.addEventListener("click", () => {
+    result.innerText = "祝父親節快樂!!!"
+  })
+
+</script>
+</html>
